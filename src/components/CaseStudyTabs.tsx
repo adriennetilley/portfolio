@@ -37,8 +37,10 @@ export function CaseStudyTabs({
         
       </div>
 
-      {/* Desktop: horizontal tabs (md and up) */}
-      <div role="tablist" className="hidden md:flex pb-4 gap-3 items-start">
+      {/* Desktop: horizontal tabs (md and up).
+             items-stretch + h-full on the card makes every tab match the
+             height of the tallest title, so longer titles never get clipped. */}
+      <div role="tablist" className="hidden md:flex pb-4 gap-3 items-stretch">
         {studies.map((study) => {
           const isActive = activeId === study.id;
           return (
@@ -47,7 +49,7 @@ export function CaseStudyTabs({
               onClick={() => onChange(study.id)}
               role="tab"
               aria-selected={isActive}
-              className="relative flex-1 min-w-0 text-left outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-4 focus-visible:ring-offset-white group">
+              className="relative flex-1 min-w-0 text-left outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-4 focus-visible:ring-offset-white group flex">
               
               {isActive &&
               <motion.div
@@ -62,12 +64,12 @@ export function CaseStudyTabs({
               }
 
               <div
-                className={`relative z-10 border-[2.5px] border-ink bg-white px-4 py-3 h-[90px] flex flex-col justify-between transition-colors duration-200 ${isActive ? '' : 'group-hover:bg-ink/5'}`}>
+                className={`relative z-10 border-[2.5px] border-ink bg-white px-4 py-3 min-h-[90px] w-full flex flex-col justify-between gap-3 transition-colors duration-200 ${isActive ? '' : 'group-hover:bg-ink/5'}`}>
                 
                 <div className="font-medium tracking-wide uppercase text-ink/60 text-[10px]">
                   {study.category}
                 </div>
-                <div className="text-base lg:text-lg leading-tight text-ink line-clamp-2 font-bold">
+                <div className="text-base lg:text-lg leading-tight text-ink font-bold break-words">
                   {study.title}
                 </div>
               </div>
