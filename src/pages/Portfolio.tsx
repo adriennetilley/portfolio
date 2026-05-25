@@ -18,12 +18,10 @@ export function Portfolio() {
   };
   return (
     <div className="min-h-screen bg-white text-ink selection:bg-ink selection:text-white pb-16">
-      <div className="max-w-6xl mx-auto px-6 md:px-12 py-10 md:py-14 flex flex-col md:flex-row gap-8 md:gap-12 bg-white">
-        {/* Left Column: Logo */}
-        <aside className="flex-shrink-0">
-          <div className="md:sticky md:top-12">
-            <PortfolioLogo />
-          </div>
+      <div className="max-w-6xl mx-auto pl-6 pr-6 md:pl-2.5 md:pr-12 py-10 md:py-14 flex flex-col md:flex-row gap-0 md:gap-2.5 bg-white">
+        {/* Left Column: decorative mark — hidden on mobile, sticky on desktop */}
+        <aside className="hidden md:block flex-shrink-0 md:sticky md:top-2.5 md:self-start">
+          <PortfolioLogo />
         </aside>
 
         {/* Right Column: Main Content */}

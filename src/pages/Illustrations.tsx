@@ -5,11 +5,9 @@ import { ILLUSTRATIONS } from '../data/illustrations';
 export function Illustrations() {
   return (
     <div className="min-h-screen bg-white text-ink pb-16">
-      <div className="max-w-6xl mx-auto px-6 md:px-12 py-10 md:py-14 flex flex-col md:flex-row gap-8 md:gap-12">
-        <aside className="flex-shrink-0">
-          <div className="md:sticky md:top-12">
-            <PortfolioLogo />
-          </div>
+      <div className="max-w-6xl mx-auto pl-6 pr-6 md:pl-2.5 md:pr-12 py-10 md:py-14 flex flex-col md:flex-row gap-0 md:gap-2.5">
+        <aside className="hidden md:block flex-shrink-0 md:sticky md:top-2.5 md:self-start">
+          <PortfolioLogo />
         </aside>
 
         <main className="flex-1 min-w-0">
