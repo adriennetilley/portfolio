@@ -32,7 +32,7 @@ li { margin-bottom: 0.4em; }
 hr { border: 0; border-top: 1.5px solid var(--rule); margin: 56px 0; }
 
 /* type scale: H1 40 / H2 30 / H3 22 */
-h1, h2, h3, h4 { font-family: var(--serif); font-weight: 400; color: var(--text); text-wrap: balance; }
+h1, h2, h3, h4 { font-family: var(--serif); font-weight: 400; color: var(--text); text-wrap: pretty; }
 h1 { font-size: 40px; line-height: 1.1; margin: 0 0 16px; }
 h2 { font-size: 30px; line-height: 1.2; margin: 56px 0 16px; }
 h3 { font-size: 22px; line-height: 1.25; margin: 40px 0 8px; }
@@ -104,7 +104,10 @@ body.menu-open { overflow: hidden; }
 main { max-width: calc(var(--col) + 2 * var(--gutter)); margin: 0 auto; padding: 0 var(--gutter); }
 main.home { padding-bottom: 0; }
 main.inner { padding-top: 40px; padding-bottom: 24px; }
-main.inner > :where(h1, h2, h3, h4, p, ul, ol, dl) { max-width: 720px; }
+/* inner pages: text column centered on the page, text itself stays left-aligned */
+main.inner > :where(h1, h2, h3, h4, p, ul, ol, dl, hr) { max-width: 720px; margin-left: auto; margin-right: auto; }
+main.inner figcaption { margin-left: auto; margin-right: auto; }
+main.inner > .about { max-width: 960px; margin-left: auto; margin-right: auto; }
 main.inner > h1:first-child, main.inner > :first-child h1 { margin-top: 0; }
 
 /* ---------- home: hero ---------- */
@@ -132,8 +135,8 @@ main.inner > h1:first-child, main.inner > :first-child h1 { margin-top: 0; }
 .cs-list { display: flex; flex-direction: column; gap: 64px; }
 .cs { display: flex; flex-wrap: wrap; align-items: center; gap: 24px 48px; margin: 0; }
 .cs-flip .cs-media { order: 2; }
-.cs-media { flex: 3 1 480px; min-width: 0; display: block; }
-.cs-text { flex: 2 1 320px; min-width: 0; }
+.cs-media { flex: 1 1 440px; min-width: 0; display: block; }
+.cs-text { flex: 1 1 360px; min-width: 0; }
 .case-img {
   width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top;
   border: 2px solid var(--ink); border-radius: 20px; background: var(--paper);
@@ -196,7 +199,7 @@ main.inner > h1:first-child, main.inner > :first-child h1 { margin-top: 0; }
 }
 
 /* ---------- inner pages ---------- */
-.lede { font-size: 18px; color: var(--muted); max-width: 720px; text-wrap: pretty; }
+.lede { font-size: 18px; color: var(--muted); text-wrap: pretty; }
 .dates-inline { font-family: var(--sans); font-size: 16px; color: var(--muted); margin-left: 8px; }
 .hint { color: var(--muted); }
 
@@ -216,7 +219,7 @@ figcaption { color: var(--muted); font-size: 15px; margin-top: 8px; max-width: 7
 .masonry { columns: 3 260px; column-gap: 16px; margin: 32px 0; }
 .masonry figure { break-inside: avoid; margin: 0 0 16px; }
 
-.facts { display: grid; gap: 12px; margin: 24px 0 32px; padding: 20px 24px; background: var(--wash); border-radius: 16px; max-width: 720px; }
+.facts { display: grid; gap: 12px; margin: 24px 0 32px; padding: 20px 24px; background: var(--wash); border-radius: 16px; }
 .facts dt { font-weight: 600; color: var(--ink-deep); }
 .facts dd { margin: 0; }
 
