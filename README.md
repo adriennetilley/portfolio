@@ -12,8 +12,7 @@ In Terminal, inside this folder:
 bash get-images.sh
 ```
 
-Then save two images by hand from adrienne.fyi (right-click > Save Image As…):
-- the animated GIF at the top of the homepage → `images/hero-comp-1_3.gif`
+Then save one image by hand from adrienne.fyi (right-click > Save Image As…):
 - the UNICEF project image on the homepage → `images/unicef-child-violence.png`
 
 Optional preview: `python3 -m http.server 8000`, then open http://localhost:8000

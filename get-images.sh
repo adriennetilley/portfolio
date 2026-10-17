@@ -21,7 +21,6 @@ echo
 echo "Done: $ok downloaded, $failed failed."
 [ "$failed" -gt 0 ] && echo "Just run the script again to retry the failed ones."
 echo
-echo "Two images aren't in this list (Squarespace hid their URLs). Save them by hand:"
-echo "  1. The animated GIF at the top of your homepage  -> save as images/hero-comp-1_3.gif"
-echo "  2. The UNICEF project image on your homepage     -> save as images/unicef-child-violence.png"
+echo "One image isn't in this list (Squarespace hid their URLs). Save it by hand:"
+echo "  - The UNICEF project image on your homepage     -> save as images/unicef-child-violence.png"
 echo "  (Right-click each one on adrienne.fyi > Save Image As…)"

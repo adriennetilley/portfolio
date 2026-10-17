@@ -8,18 +8,22 @@
 <meta property="og:title" content="Adrienne Tilley — UX, Product Design & Illustration">
 <meta property="og:description" content="Adrienne Tilley is a senior UX and product designer specializing in complex systems, data-heavy SaaS, and information architecture.">
 <meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600&family=Young+Serif&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="site-header">
-  <a class="brand" href="./"><span class="name">Adrienne Tilley</span><span class="tag">UX + Product Design</span></a>
+<header class="site-header is-home">
+  
   <nav><a href="./" aria-current="page">Home</a><a href="illustration/">Illustration/Branding</a><a href="motion/">Motion</a><a href="about-me/">About</a><a href="contact-us/">Contact</a></nav>
 </header>
 <main>
 
 <section class="hero">
-  <figure class="hero-media"><img src="images/hero-comp-1_3.gif" alt="Animated illustration"></figure>
-  <h1>UX, Product Design &amp; Illustration</h1>
+  <img class="hero-cats" src="images/hero-cats.gif" alt="Three hand-drawn cats waving hello" width="900" height="291">
+  <h1 class="hero-name">Adrienne Tilley</h1>
+  <p class="hero-role">UX, product design &amp; illustration</p>
   <p class="lede">My passion is in the understanding and design of complex systems, deep architecture, and visual representations of these topics. I enjoy taking complex ideas and data and distilling it down to its most understandable form.</p>
 </section>
 
@@ -27,25 +31,30 @@
 <h2 class="section-title">Work</h2>
 
 <article class="job">
-  <h3>Senior UX &amp; UI designer <span class="org">Playmetrics</span></h3>
-  <p class="dates">Mar 2025 – Current</p>
+  <p class="when">Mar 2025 – Current</p>
+  <div class="what">
+  <h3>Playmetrics</h3>
+  <p class="role">Senior UX &amp; UI designer</p>
   <p>Working on a large-scale youth sports management platform supporting governing bodies, clubs, coaches, players, and parents across multiple levels of competition.</p>
+</div>
 </article>
 
 <article class="job">
-  <h3>Senior Product Designer <span class="org">Clinetic</span></h3>
-  <p class="dates">Sep 2022 – Mar 2025</p>
+  <p class="when">Sep 2022 – Mar 2025</p>
+  <div class="what">
+  <h3>Clinetic</h3>
+  <p class="role">Senior Product Designer</p>
   <p>Clinical Study Insight and Participant Management Startup (SaaS)</p>
   <p>Solo designer working with two engineering teams to take business requirements and execute them into wireframes, final mockups, and maintain a pattern library. Interfacing with health professionals to create interfaces for clinical study insights including chart creation and participant management.</p>
-  <a class="card" href="clinetic/">
-    <img src="images/workqueue-presentation-eda017.png" alt="Clinetic work queue interface" loading="lazy">
-    <span class="card-label">Healthcare Case Study <span class="arrow">View work →</span></span>
-  </a>
+  <a class="case" href="clinetic/"><img src="images/workqueue-presentation-eda017.png" alt="Clinetic work queue interface" loading="lazy"><span class="case-label">Healthcare Case Study</span><span class="case-cta">Read the case study</span></a>
+</div>
 </article>
 
 <article class="job">
-  <h3>Senior UX Design &amp; Visual designer <span class="org">web3 Freelance</span></h3>
-  <p class="dates">Apr 2021 – Sep 2022</p>
+  <p class="when">Apr 2021 – Sep 2022</p>
+  <div class="what">
+  <h3>web3 Freelance</h3>
+  <p class="role">Senior UX Design &amp; Visual designer</p>
   <p>Worked as a senior user experience and product designer. Providing design guidance and expertise to build out consistent and intuitive interfaces for new and innovated web3 technology in the DAO space.</p>
 
   <h4>DAOhaus v3 Overhaul (Nov 21 – Feb 22)</h4>
@@ -54,15 +63,14 @@
 
   <h4>Yeeter Fundraising (Dec 21 – March 22)</h4>
   <p>A small fundraising platform created as an add on for onboarding into a DAO on the DAOhaus platform. The platform was built to support a community funding round for DAOhaus and has collected around 871 ETH in the first 6 months it was made available to the public.</p>
-  <a class="card" href="daohausyeeter/">
-    <img src="images/frame-1-98faca.png" alt="Yeeter fundraising platform" loading="lazy">
-    <span class="card-label">Yeeter Fundraising platform ('22) <span class="arrow">View →</span></span>
-  </a>
+  <a class="case" href="daohausyeeter/"><img src="images/frame-1-98faca.png" alt="Yeeter fundraising platform" loading="lazy"><span class="case-label">Yeeter Fundraising platform ('22)</span><span class="case-cta">Read the case study</span></a>
+</div>
 </article>
 
 <article class="job">
+  <p class="when">Apr 2012 – June 2021</p>
+  <div class="what">
   <h3>Collegenet</h3>
-  <p class="dates">Apr 2012 – June 2021</p>
   <p>Initially hired as a web developer then quickly moved into UX design and project management. Worked to push the importance of UX design and Agile software development methodologies across the company led to gaining more responsibility and the promotion to manager of the UX Team.</p>
   <p>Projects over the course of my time there:</p>
   <ul>
@@ -70,15 +78,14 @@
     <li><strong>Self-Service Application Builder</strong> (lead UX designer) — Building out a self-service college application form builder from scratch alongside one other designer. We worked to create a smooth experience that could handle the level of logic complexity that college’s require.</li>
     <li><strong>Coalition Undergraduate Application</strong> (project manager/UX designer) — Helped build this product from the ground up as one of the lead Product Designers. Fully self-service forms, a large section for applicants to fill in common data, an interface for recommenders and counselors to add and edit documents, and ways for colleges to receive their applicant information.</li>
   </ul>
-  <a class="card" href="case-study-cn/">
-    <img src="images/admit-events-interface-1-155416.png" alt="Event management UI" loading="lazy">
-    <span class="card-label">Event Management UI <span class="arrow">View →</span></span>
-  </a>
+  <a class="case" href="case-study-cn/"><img src="images/admit-events-interface-1-155416.png" alt="Event management UI" loading="lazy"><span class="case-label">Event Management UI</span><span class="case-cta">Read the case study</span></a>
+</div>
 </article>
 
 <article class="job">
+  <p class="when">March – November 2017</p>
+  <div class="what">
   <h3>Periscopic</h3>
-  <p class="dates">March – November 2017</p>
   <p>I worked on a few small projects for a data visualization firm, this included working on initial design and strategy of working with the data through to final production and QA of projects.</p>
   <p><strong>Projects:</strong></p>
   <ul>
@@ -87,26 +94,28 @@
     <li><a href="https://works.periscopic.com/unicef-child-violence/#all">UNICEF: Mapping Violence Against Children</a> (UX/UI designer)</li>
   </ul>
   <figure><img src="images/unicef-child-violence.png" alt="The childhood violence project for UNICEF" loading="lazy"><figcaption>The childhood violence project for UNICEF</figcaption></figure>
+</div>
 </article>
 
 <article class="job">
+  <p class="when">February 2016 – October 2017</p>
+  <div class="what">
   <h3>Hack Oregon</h3>
-  <p class="dates">February 2016 – October 2017</p>
   <p>Hack Oregon is a volunteer-based non-profit that utilizes publicly available data to create data visualizations to help bring light to civic issues. I started as a volunteer for visual, interaction, and information design for projects. I moved into a role helping lead the creation and implementation of new branding and style guidelines for their platform <a href="http://civicplatform.org/">CIVIC</a>.</p>
   <p>I’ve also taught courses and workshops in design thinking, information design, and software design foundations through their Hack University educational branch.</p>
-  <a class="card" href="case-study-cn-1/">
-    <img src="images/port-civic-1-sm-155416.png" alt="CIVIC product design" loading="lazy">
-    <span class="card-label">CIVIC Product Design <span class="arrow">View →</span></span>
-  </a>
+  <a class="case" href="case-study-cn-1/"><img src="images/port-civic-1-sm-155416.png" alt="CIVIC product design" loading="lazy"><span class="case-label">CIVIC Product Design</span><span class="case-cta">Read the case study</span></a>
+</div>
 </article>
 </section>
 
 <section>
 <h2 class="section-title">Education</h2>
 <article class="job">
+  <p class="when">2007 – 2010</p>
+  <div class="what">
   <h3>University of Washington</h3>
-  <p class="dates">2007 – 2010</p>
   <p>Bachelor of Arts (B.A.), Photography — Conceptual art focused, explored a variety of mediums with a core in photography.</p>
+</div>
 </article>
 </section>
 
