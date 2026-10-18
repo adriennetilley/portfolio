@@ -27,72 +27,52 @@
 
 <h1>Yeeter Fundraising Case Study</h1>
 <dl class="facts">
-  <div><dt>Role</dt><dd>Sole designer, UX design / UI Design / Branding and Illustration — I worked on this project from initial requirement gathering through to review of shipped product.</dd></div>
-  <div><dt>Started work</dt><dd>Mid-December 2021</dd></div>
-  <div><dt>Released</dt><dd>Feb 2022</dd></div>
-  <div><dt>Volume of funds through platform</dt><dd><strong>871.67</strong> ETH / <strong>$73.3k</strong> DAI (equivalent to USD)</dd></div>
+  <div><dt>Role</dt><dd>Sole designer: UX, UI, branding and illustration, from requirements gathering through review of the shipped product.</dd></div>
+  <div><dt>Timeline</dt><dd>Mid-December 2021 to release in February 2022</dd></div>
+  <div><dt>Funds raised through the platform</dt><dd><strong>871.67</strong> ETH / <strong>$73.3k</strong> DAI</dd></div>
 </dl>
 
 <hr>
 <h2>The Project Brief</h2>
-<p>The Yeeter platform allows users to create a crowdfunding project with multiple core team members and once funding is added by a user they have the option at any time to remove their funds.</p>
-<p>With the success of another crowdfunding platform (Juicebox) in web3, we decided to create a version of a crowdfunding app that would lay over our architecture. From a business perspective, this would allow us to:</p>
+<p>Yeeter lets people create a crowdfunding project with multiple core team members, and contributors can pull their funds back out at any time. We wanted a fundraiser built on top of our own system, and we ended up using it ourselves to raise about a million in funds to keep building our project. For the business, it would:</p>
 <ul>
-  <li>Generate funds (3% of raised funds go to us) for further platform creation</li>
-  <li>Funnel for new people onto our platform</li>
-  <li>Provide a product that enhances the crowdfunding landscape overall</li>
-  <li>Allow the parent product to use it for fund raising ourselves</li>
+  <li>Bring in funds (3% of each raise) for further platform work</li>
+  <li>Funnel new people onto our platform</li>
+  <li>Let us use it for our own fundraising</li>
 </ul>
 
 <hr>
-<h2>Step 1: Understand &amp; Goals for Initial Release</h2>
-<p><strong>Get to Know the Smart Contracts</strong></p>
-<p>The origination of this project came from a lead backend developer making a major update to our contracts as a starting place for the team. The first step in this project was to get a deep understanding of smart contracts: What can they do? What limitations will we run up against?</p>
-<p><strong>Understand the Landscape</strong></p>
-<p>I went through a small handful of other fundraising products. Popular ones in web2 such as Kickstarter and Indiegogo as well as web3 options such as <a href="https://juicebox.money/">Juicebox</a>. The goal was to get an idea of shared patterns across the apps and any crucial features that we may have missed making a fundraising platform for the first time.</p>
-<p><strong>Community Input</strong></p>
-<p>From the technical and internal understanding of the project, we also:</p>
+<h2>Step 1: Understand the Goals</h2>
 <ul>
-  <li>Gathered insights from community leaders that were interested in starting projects on this platform</li>
-  <li>Started helping foster a few small projects that could use a small amount of funding and working toward getting them up and running as some of our first projects</li>
+  <li>Worked closely with our lead backend dev to deeply understand the smart contracts: what they could do, and what limits we’d run into.</li>
+  <li>Did competitive research on Kickstarter, Indiegogo and Juicebox for shared patterns and must-have features.</li>
+  <li>Ran research interviews with interested community leaders and helped a few small projects launch as our first raises. They wanted something that fit into the platform they already used, and an easy way for supporters to send crypto straight to the DAO.</li>
 </ul>
-<p>We found a few key points — that they were interested in something that overlaid well into the existing parent platform, because they were already embedded there and they were looking for an extremely easy way for their supporters to send crypto funds to them and have them instantly available for governance by the DAO.</p>
 
 <hr>
 <h2>Step 2: Information Architecture &amp; Flow</h2>
+<p>I made a user task flow diagram and iterated on it with the team to map where data is used, how things should function, and where you interact with the blockchain.</p>
 <figure><a href="../images/screen-shot-2022-06-20-at-1-23-12-pm-1961ad.png" class="zoom"><img src="../images/screen-shot-2022-06-20-at-1-23-12-pm-1961ad.png" alt="User task flow diagram" loading="lazy"></a></figure>
-<p><strong>User Task Flow</strong></p>
-<p>I made and iterated with the team on a user task flow diagram to get a good idea of when and were data will be used, how it should function and how you will interact with the blockchain.</p>
 
 <hr>
-<h2>Step 3: Wireframing the Structure</h2>
-<p>From there I created wireframes for early input from on direction. Like the steps before it, there was a lot of back and forth and iterations with the team.</p>
+<h2>Step 3: Wireframing</h2>
+<p>Next came wireframes for early direction, with lots of back and forth with the team.</p>
 <figure><a href="../images/screen-shot-2022-06-20-at-1-25-19-pm-1f809b.png" class="zoom"><img src="../images/screen-shot-2022-06-20-at-1-25-19-pm-1f809b.png" alt="Wireframes" loading="lazy"></a></figure>
 
 <hr>
-<h2>Step 4: Finalizing Designs</h2>
-<p>As everything got locked in and iterations were completed, I created simple specs for this project for the developers to follow.</p>
-<p>This being a small, lean team with a lot of communication and a fast pace, I left them relatively simple. Mainly consisting of:</p>
-<ul>
-  <li>Examples of screens for each stage of the project page (someone has or hasn’t contributed, funding met/not met)</li>
-  <li>The main project view</li>
-  <li>The project landing site, working with copy editors</li>
-</ul>
+<h2>Step 4: Final Designs</h2>
+<p>Since we were a small, fast team with lots of communication, I kept the specs simple: screens for each state of the project page (contributed or not, funding met or not), the main project view, and the landing site, done with copy editors.</p>
 <div class="grid cols-2"><figure><a href="../images/screen-shot-2022-06-20-at-1-28-39-pm-165575.png" class="zoom"><img src="../images/screen-shot-2022-06-20-at-1-28-39-pm-165575.png" alt="" loading="lazy"></a></figure><figure><a href="../images/screen-shot-2022-06-20-at-1-31-40-pm-165575.png" class="zoom"><img src="../images/screen-shot-2022-06-20-at-1-31-40-pm-165575.png" alt="" loading="lazy"></a></figure><figure><a href="../images/ui-all-projects-a-165575.png" class="zoom"><img src="../images/ui-all-projects-a-165575.png" alt="" loading="lazy"></a></figure><figure><a href="../images/ui-projectpage-nocontrib-h-165575.png" class="zoom"><img src="../images/ui-projectpage-nocontrib-h-165575.png" alt="" loading="lazy"></a></figure></div>
 
 <hr>
 <h2>Step 5: Development &amp; Release</h2>
-<ul>
-  <li>I worked with 3 engineers and a copy writer on creation of the software, finding collaborative solutions that satisfy usability and technical restraints</li>
-  <li>Make adjustments and cutting extras based on timeline</li>
-  <li>Quick iterations during first few raises to improve usability</li>
-</ul>
+<p>I worked with 3 engineers to find solutions that balanced usability with technical limits, cut extras to meet the timeline, and made quick usability fixes during the first few raises.</p>
 
 <hr>
 <h2>Lessons Learned</h2>
 <ul>
-  <li>As an organization we should have put more energy and resources behind the project after it was built, it could be much more successful with a few updates and a few key features built out as well as marketing.</li>
-  <li>We decided to slim down the area for the description of the project with the expectation of returning to improve this later. We should have focused on building that into the Project pages first to match how a lot of the competitors. There is nothing more important than the descriptor of the project, it’s the soul of the fundraiser. We unfortunately haven’t been able to return and update this.</li>
+  <li>As an organization we should have put more energy behind the project after it launched. A few updates, key features and some marketing could have made it much more successful.</li>
+  <li>We slimmed down the project description area, planning to come back to it. We should have built it in from the start, like a lot of competitors do. There is nothing more important than the description of the project; it’s the soul of the fundraiser. Unfortunately we never got to go back and update it.</li>
 </ul>
 
 </main>
