@@ -46,6 +46,7 @@
     var img = document.createElement("img");
     img.src = link.getAttribute("href");
     img.alt = (link.querySelector("img") || {}).alt || "";
+    img.onload = function () { if (img.naturalHeight <= img.naturalWidth * 1.2) box.classList.add("is-wide"); };
     box.appendChild(img);
     function close() { box.remove(); document.removeEventListener("keydown", onKey); }
     function onKey(ev) { if (ev.key === "Escape") close(); }
